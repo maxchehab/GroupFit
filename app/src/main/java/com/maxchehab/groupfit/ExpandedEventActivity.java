@@ -46,15 +46,13 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
         gestureDetector = new GestureDetector(this, new GestureListener());
 
 
-
+        setTitle("");
         title = (TextView) findViewById(R.id.expand_title);
         progressBar = (ProgressBar) findViewById(R.id.expand_progressBar);
         remaining = (TextView) findViewById(R.id.expand_remaining);
         date = (TextView) findViewById(R.id.expand_time);
         description = (TextView) findViewById(R.id.expand_description);
 
-
-        setTitle(FeedActivity.CURRENT_EVENT.title);
         title.setText(FeedActivity.CURRENT_EVENT.title);
         progressBar.setProgress(FeedActivity.CURRENT_EVENT.progress);
         remaining.setText(FeedActivity.CURRENT_EVENT.remaining + " remaining spots.");
@@ -65,7 +63,7 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.expanded_event_menu, menu);
+        //getMenuInflater().inflate(R.menu.expanded_event_menu, menu);
         return true;
     }
 
