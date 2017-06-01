@@ -1,5 +1,6 @@
 package com.maxchehab.groupfit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -9,7 +10,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.Interpolator;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,12 +31,17 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
 
 
     private TextView title;
-    private ProgressBar progressBar;
-    private TextView remaining;
     private TextView date;
+    private TextView time;
+    private TextView location;
+    private TextView host;
+    private TextView attendees;
     private TextView description;
     private GestureDetector gestureDetector;
     private Toolbar toolbar;
+    private ScrollView scrollView;
+
+    private ImageButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,16 +60,56 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
 
         setTitle("");
         title = (TextView) findViewById(R.id.expand_title);
-        progressBar = (ProgressBar) findViewById(R.id.expand_progressBar);
-        remaining = (TextView) findViewById(R.id.expand_remaining);
-        date = (TextView) findViewById(R.id.expand_time);
+        date = (TextView) findViewById(R.id.expand_date);
         description = (TextView) findViewById(R.id.expand_description);
+        time = (TextView) findViewById(R.id.expand_time);
+        location = (TextView) findViewById(R.id.expand_location);
+        host = (TextView) findViewById(R.id.expand_host);
+        attendees = (TextView) findViewById(R.id.expand_attendees);
+        scrollView = (ScrollView) findViewById(R.id.expand_scrollView);
+
+
+        backButton = (ImageButton) findViewById(R.id.expand_back);
 
         title.setText(FeedActivity.CURRENT_EVENT.title);
-        progressBar.setProgress(FeedActivity.CURRENT_EVENT.progress);
-        remaining.setText(FeedActivity.CURRENT_EVENT.remaining + " remaining spots.");
         date.setText(FeedActivity.CURRENT_EVENT.date);
+        time.setText(FeedActivity.CURRENT_EVENT.time);
+        location.setText(FeedActivity.CURRENT_EVENT.longitude + ", " + FeedActivity.CURRENT_EVENT.latitude);
+        host.setText(FeedActivity.CURRENT_EVENT.host);
+        attendees.setText(FeedActivity.CURRENT_EVENT.attendeesCount + " people are going • " + FeedActivity.CURRENT_EVENT.remainingCount +  " spots left.");
         description.setText(FeedActivity.CURRENT_EVENT.description);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
+        scrollView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                Log.d("scroll","scroll distance: " + (scrollY - oldScrollY));
+                if (scrollY - oldScrollY > 10) {
+                    hideToolbar();
+                }
+                if (scrollY - oldScrollY  < -10) {
+                    showToolbar();
+                }
+
+                if (scrollY == 0) {
+                    showToolbar();
+                }
+            }
+        });
+    }
+
+    public void hideToolbar(){
+        findViewById(R.id.expand_appBarLayout).animate().translationY(-toolbar.getHeight()).setDuration(100);
+    }
+    public void showToolbar(){
+        findViewById(R.id.expand_appBarLayout).animate().translationY(0).setDuration(100);
+
     }
 
     @Override
@@ -85,7 +137,7 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if(gestureDetector.onTouchEvent(ev)){
-            scaleView(findViewById(R.id.expand_checkAnimation),400);
+           // scaleView(findViewById(R.id.expand_checkAnimation),400);
             return true;
         }
         return super.dispatchTouchEvent(ev);

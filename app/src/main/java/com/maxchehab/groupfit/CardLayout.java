@@ -34,25 +34,25 @@ public class CardLayout extends CardView{
 
     private TextView title;
     private ImageView thumbnail;
-    private ProgressBar progressBar;
-    private TextView remaining;
     private ImageView activityIcon;
     private TextView date;
+    private TextView time;
+    private TextView attendees;
 
     private void init(final Event event) {
         inflate(getContext(), R.layout.card_layout, this);
         title = (TextView) findViewById(R.id.card_title);
         thumbnail = (ImageView) findViewById(R.id.card_thumbnail);
-        progressBar = (ProgressBar) findViewById(R.id.card_progressBar);
-        remaining = (TextView) findViewById(R.id.card_remaining);
         activityIcon = (ImageView) findViewById(R.id.card_activityIcon);
-        date = (TextView) findViewById(R.id.card_time);
+        date = (TextView) findViewById(R.id.card_date);
+        time = (TextView) findViewById(R.id.card_time);
+        attendees = (TextView) findViewById(R.id.card_attendees);
 
         title.setText(event.title);
         Picasso.with(getContext()).load("https://maps.googleapis.com/maps/api/staticmap?center=" + event.longitude + "," + event.latitude + "&zoom=18&size=400x400&scale=2&maptype=terrain&markers=%7C" + event.longitude + "," + event.latitude + "&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI").into(thumbnail);
-        progressBar.setProgress(event.progress);
-        remaining.setText(event.remaining + " remaining spots.");
         date.setText(event.date);
+        time.setText(event.time);
+        attendees.setText(event.attendeesCount + " people are going • " + event.remainingCount +  " spots left.");
 
         if (event.activity.equals("cycling")) {
             activityIcon.setImageResource(R.drawable.ic_cycling);

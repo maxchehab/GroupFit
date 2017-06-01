@@ -96,7 +96,7 @@ public class FeedActivity extends AppCompatActivity
 
         for(int i = 0; i < jsonStream.size(); i++){
             JsonObject activity = (JsonObject) jsonStream.get(i);
-            stream.add(new CardLayout(this, new Event(activity.get("title").getAsString(),activity.get("longitude").getAsDouble(),activity.get("latitude").getAsDouble(),activity.get("progress").getAsInt(),activity.get("remaining").getAsInt(),activity.get("date").getAsString(),activity.get("activity").getAsString(),activity.get("description").getAsString())));
+            stream.add(new CardLayout(this, new Event(activity.get("title").getAsString(),activity.get("longitude").getAsDouble(),activity.get("latitude").getAsDouble(),activity.get("activity").getAsString(),activity.get("description").getAsString(),activity.get("date").getAsString(),activity.get("time").getAsString(),activity.get("host").getAsString(),activity.get("attendeesCount").getAsInt(),activity.get("remainingCount").getAsInt())));
         }
 
         LinearLayout feedLayout = (LinearLayout) findViewById(R.id.layout_feed);

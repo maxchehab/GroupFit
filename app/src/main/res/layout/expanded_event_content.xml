@@ -1,93 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expand_scrollView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="com.maxchehab.groupfit.ExpandedEventActivity"
-    android:layout_marginTop="?attr/actionBarSize"
-    android:padding="10dp">
-    <fragment
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:id="@+id/expand_mapView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        app:liteMode="true"
-        tools:context="com.maxchehab.groupfit.ExpandedEventActivity" />
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/expand_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/expand_mapView"
-        android:maxLines="3"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
-        android:text="[title]"
-        android:textColor="#222"
-        android:textSize="22dp"
-        android:textStyle="bold" />
 
-    <ProgressBar
-        android:id="@+id/expand_progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/expand_description"
-        android:paddingTop="10dp"
-        android:progress="40"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="20dp"
+        tools:context="com.maxchehab.groupfit.ExpandedEventActivity">
 
-    <TextView
-        android:id="@+id/expand_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/expand_title"
-        android:text="[description]"
-        android:textSize="16dp" />
 
-    <TextView
-        android:id="@+id/expand_remaining"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="[#] remaining spots."
-        android:layout_below="@+id/expand_progressBar"
-        android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/expand_icon_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/expand_icon_schedule"
+            android:layout_below="@+id/expand_time"
+            android:layout_marginTop="30dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:srcCompat="@drawable/ic_place" />
 
-    <TextView
-        android:id="@+id/expand_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="[time]"
-        android:layout_alignBaseline="@+id/expand_title"
-        android:layout_alignBottom="@+id/expand_title"
-        android:layout_alignParentEnd="true" />
 
-    <Button
-        android:id="@+id/expand_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/expand_remaining"
-        android:backgroundTint="@color/colorAccent"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="Sign Up"
-        android:textColor="#FFF"
-        android:textSize="24dp" />
+        <ImageView
+            android:id="@+id/expand_icon_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/expand_icon_place"
+            android:layout_below="@+id/expand_icon_place"
+            android:layout_marginTop="30dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:srcCompat="@drawable/ic_person" />
 
-    <ImageView
-        android:id="@+id/expand_checkAnimation"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_alignBottom="@+id/expand_mapView"
-        android:layout_centerHorizontal="true"
-        android:scaleX="0"
-        android:scaleY="0"
-        android:tint="@color/colorDoubleTap"
-        app:srcCompat="@drawable/ic_check" />
-</RelativeLayout>
+        <fragment
+            android:id="@+id/expand_mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/expand_description"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="30dp"
+            app:liteMode="true"
+            tools:context="com.maxchehab.groupfit.ExpandedEventActivity" />
+
+        <TextView
+            android:id="@+id/expand_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="[Title]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/expand_signup"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/expand_title"
+            android:layout_marginTop="42dp"
+            android:background="@color/cardview_dark_background"
+            android:text="RSVP"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/expand_signup"
+            android:layout_marginBottom="-20dp"
+            android:background="@color/common_google_signin_btn_text_light_disabled" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignTop="@id/expand_signup"
+            android:layout_marginTop="-20dp"
+            android:background="@color/common_google_signin_btn_text_light_disabled" />
+
+        <ImageView
+            android:id="@+id/expand_icon_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view4"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="43dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:srcCompat="@drawable/ic_schedule" />
+
+        <TextView
+            android:id="@+id/expand_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/expand_icon_schedule"
+            android:layout_below="@+id/expand_icon_schedule"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-28dp"
+            android:text="[date]" />
+
+        <TextView
+            android:id="@+id/expand_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/expand_icon_schedule"
+            android:layout_below="@+id/expand_date"
+            android:layout_marginStart="50dp"
+            android:text="[time]" />
+
+        <TextView
+            android:id="@+id/expand_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/expand_icon_place"
+            android:layout_below="@+id/expand_icon_place"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-24dp"
+            android:text="[location]" />
+
+        <TextView
+            android:id="@+id/expand_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/expand_icon_host"
+            android:layout_below="@+id/expand_icon_host"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-24dp"
+            android:text="[host]" />
+
+        <TextView
+            android:id="@+id/expand_attendees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/expand_icon_host"
+            android:layout_marginTop="31dp"
+            android:text="[x] people are going • [y] spots left"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/circularImageView7"
+            android:layout_toEndOf="@+id/circularImageView7"
+            android:src="@mipmap/ic_profile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#00eeeeee"
+            app:civ_shadow_radius="1" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/circularImageView6"
+            android:layout_toEndOf="@+id/circularImageView6"
+            android:src="@mipmap/ic_profile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#00eeeeee"
+            app:civ_shadow_radius="1" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/circularImageView5"
+            android:layout_toEndOf="@+id/circularImageView5"
+            android:src="@mipmap/ic_profile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#00eeeeee"
+            app:civ_shadow_radius="1" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/circularImageView4"
+            android:layout_toEndOf="@+id/circularImageView4"
+            android:src="@mipmap/ic_profile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#00eeeeee"
+            app:civ_shadow_radius="1" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circularImageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/expand_attendees"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_profile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#00eeeeee"
+            app:civ_shadow_radius="1" />
+
+        <TextView
+            android:id="@+id/expand_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/circularImageView6"
+            android:layout_marginTop="16dp"
+            android:text="[description]" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

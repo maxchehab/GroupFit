@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\maxch\Documents\GitHub\GroupFit\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="D:\GitHub\GroupFit\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b0fb03631a23a3e35bb371f76553943723b5be2">
+        <dex dex="D:\GitHub\GroupFit\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_555320a59594828ab5f22daa122779e3f993cd6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\GitHub\GroupFit\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="C:\Users\maxch\Documents\GitHub\GroupFit\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8f805a5ecc9008d7b0c311e55eb11373fbf873bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\maxch\Documents\GitHub\GroupFit\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f79a017a53a887dfa743f2917d2d9283358289e">
-        <dex dex="C:\Users\maxch\Documents\GitHub\GroupFit\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ebb1d07eada6bec47bb8f29618409e074d59e89a\classes.dex" />
+        <dex dex="D:\GitHub\GroupFit\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f4759c051b9e8b16f0e2da0ca7cf0843bd7ce3c6\classes.dex" />
     </item>
 
 </items>
