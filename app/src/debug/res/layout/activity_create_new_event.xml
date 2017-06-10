@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.maxchehab.groupfit.CreateNewEventActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/create_new_event_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/new_event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/new_event_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:hint="Description"
+                android:inputType="textMultiLine"></AutoCompleteTextView>
+
+            <Spinner
+                android:id="@+id/new_event_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                style="@style/Base.V7.Widget.AppCompat.AutoCompleteTextView"/>
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/new_event_select_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Select Date" />
+
+                <Button
+                    android:id="@+id/new_event_select_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Select Time" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/new_event_location_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@color/cast_intro_overlay_button_background_color" />
+
+            <Button
+                android:id="@+id/new_event_pick_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Location" />
+
+            <SeekBar
+                android:id="@+id/new_event_occupancy_slider"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:max="10"
+                android:progress="3"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/new_event_occupancy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Max amount of people: 3" />
+
+            <Button
+                android:id="@+id/new_event_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Event"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

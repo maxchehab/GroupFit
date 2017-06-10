@@ -10,6 +10,13 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -44,6 +51,9 @@
             android:name=".ExpandedEventActivity"
             android:label="@string/title_activity_expanded_event"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateNewEventActivity"
+            android:label="@string/title_activity_create_new_event" />
     </application>
 
 </manifest>
