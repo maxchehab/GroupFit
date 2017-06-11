@@ -3,8 +3,341 @@
 
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/c4c035cb071fb9ca545404b2e938d56ef0008c95/output/jars/classes.jar"
+        jar="/home/maxchehab/.android/build-cache/f4242635804b330e4511485673bc19f1ba598c66/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2306e0665b3c407099437d9332e8528c2bfd5f99">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_421eae984b4d4fe5421ba76324a0afe6cd413d57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/7c6001a1febd150a82a1ac23bce337c6305f5f3f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30704152908c78f80b1fa72d3815118d102a5f07">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c27dd19ed69171dd1fe386ee37f95df75aa7d475/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_b071e7b7ee7999e6b3dbc07f18f8e1e0b7531dc1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/6dfdc78b6be88d5d36cd99fd0ef5753cb3fb747f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f43d6c042ee8eb48fa7606da4d1034d472a43cd">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a18bb9b78639277d5d533f18c3a002772f6dc183/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/e19d71d22e1e20a4ae0bc29991b47a747ae68d9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e39662b49ef66950c0941aa5fd4c49346a7c341">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ed1355ea3c1416e7076b7548bf32f58a4ed44f28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/5ea15f474f32a8b219d4ba8e16d1313ee067c0b5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bade648cc46af0ffc636586806c60dba1b7fdf8">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_62160964bc3e64cb58df21880df2591e19cd18af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/7822f3da6e93a8f90262f1afa258bfa9325a3281/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ffbd024a5fd5efda6714beeaa97314b43563f1c">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b14103101a153dfafa40df3905410681ad71a4a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/5ac3a48defd7cc14415c8cea413f9a0e375de456/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="972004dcec5aeb1d9f4c06a6d90e9b5b674b9aa3">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_428f5b2919fcf12a26e46974e1738162dae01933/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/af10d47eea1610d74ed1dfeb51f1a10394cf643c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="700b670ed3f9cf4b240081993c6004817866985a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9de01d72588f5c85d64e61a3a94e12779194732/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/b961ee427c775e2e6e6dd071ac107a9b34b45b0a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5d08eea1d3853927600d2507c7ca47a31c3df5d0">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_445ab10d95596df014ae8ffbcf9ff7cbcbf515e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/2637e7cac05cb1999374bcdda42c3a7c44fde3bd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eaac8b02a2373e238cab6fc514e4667204b64191">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b553ef5e728e821f42d8a1003b75a02897ce4172/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/2d569de9b2b97b9d43f901cd9af8b9e5ae6964c1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5af721e99ea8e51ab4c68975048641f01aca77b2">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b7caa5e591ce95980667bb06f4702ac8ef200edd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/87eb7985493abe0f5a7be1b34a5f2ca879307857/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ce1b9865e1e9baf2c9e03b4953ef2531db32d53">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea5842a609f5e3b56f6c7f924fecf9ded91a0231/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/ad151f3531bd534bc785aead28d4ab2cc4d1d416/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a5f50e080b426327fe1851f6f7b5f836bff6ac9f">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e7dcb56425105720a496f4c746970ea0d8b9f53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/e4cc22738ccc2582525c289386062a4ccbd72cb9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a6daff13bf4ff813ad6686440c9c116e3bbd7630">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_00f8f949c3be2e7bac7f3be938e8a0da57d4147e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/80d41a3883b971f8862089244c352fc74ba5bbf9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e72c498ef3e345135b6bfdf7fc83c6b905228ade">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7040cbef908663e9b9f366b9f3012abff0b6e8cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/845a02c26f7934cd12ce5349e4af259b2aadbaed/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d410043f93e71bb0179ba86b85726dd080f14b79">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9484aaf810bc5faf4172264ae9d54d4d3b104ecf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/87afb2a622211d8e3f84a7a6237c8c7d906c9f9a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_373fd227b755e681e08a4f6c3287787858dee67e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/2bcbbbce182cecb2036d25568e2663a947f94537/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30854fe0b2a6e495a821d8f41f52c0a1d18d8d2a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2da3950f3e298368019e7dd741963be21bcb3071/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/49e6c97acd5858d51b7768fbf7fa2a3a5ec08101/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="af26875652e085cd14713ff655bc3aa07960d459">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_83f37a4abc8352632fcc70c0a67e5aaf7eb6905a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/e854a0a2a347dcb23ffe08d59993ba3dd9efd536/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a00d7f8576a10b66449fbe4ac16f8de2fa4d683f">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_04d105409ed21a89c9032cdc943a23f18285c6b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/a4a1192427db1895a99cc66eb03662ea52432b17/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4571d5800fdcdc7f28cd47c4abf83281aef38500/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/94508f5006a9050b6460bfb674f1ff414fa9e6e6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6688016b1c2ab0daad89bb59ca9b7acbd1c80412">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fb4821b27e3ebe288a9e7444ad42fbac8abb902c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/bc4ecbefe87af2ad05eb83c8bec9a99754bda38a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="022615f683d7cdff31a236e7a31e1048b51196eb">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_054d59b4faddfec7312940ba219964da680c8c5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/0c6b69c612636bc4dfd150e46ea1bbfdd94261f2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="432ae8736f68442ef8d6e5c43631081aaa298a34">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0f13911052f0de2e3aed04c582f86e906b80b9ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/abd52a133d38dd0842e7275a1695c75df867f4b6/output/jars/classes.jar"
         jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf9754bfa8484f88f26e45d28fe298daa544d4f0">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad73c6100f024a46b83e258297cc2d5da0854186/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/b2e18d028a61014cdaa62e3a0973a15d6600f08e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="472812641483188b3121f3294d7da47df3c14d33">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcfb61d6a29c740c4765b356a7c5f871d641bd21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/337ce05a9ab2e403cd758179faf44cb423c727ab/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b985bd4eb1abd0e7e1f49c9cdf80a0d3563bad2a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b15b634204a74441ffcd1de863692fec01958b09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/2e5514525162bd40c3fcf341f42f395e17470050/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a67e5fbb2dacbe75c0a942e9dfec7a49803b941e">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e4047432fd745c11670f80c8a621509841528ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/17ae770d60b4d25d668b72b9b8442fa5aa509214/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aba37a3eec04e174dc59f00cf4bd7992061d847a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_785cdcc614b1681ef1ce95c49614fa8200798e56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/472144787bdf393493669cf3e02b8d900113e4b8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="20051ea387377125db14d6c0966662019f0a897c">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9812d31b06746e7a3bcd54c6ec10bdac8387616f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/84d22cebaedda75c061daae5c24e5ba530ca99c5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a611d7a00671ec4eb3050a21425fae955a38eb8a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d2178d4f8f6cf7c4149c5bf10f4596dbc6b1ee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/d8a71e3097ed388f08b9c6ecfa4509acd0d5e0b7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7b0c1662f1e2949e3635c2461a889cf9bd19c52">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b401b4eb18a54c4649737b01d2d996fb32da7142/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/ddecdae320de59abda506ff48c5ca508020b67c5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_11d00c1298ff39208d731af0e897b3779d29d9ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/9048c3cae7e28bd3eed0812e0856844d780eb879/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f58a75f1d77aea54d4a3c6bad03fa09df438285e">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a7a5b332742643d091f079bb9e8206efe4aaf8a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/a4b9ef81c2766b7bcabb981dff7ee551d61b7713/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d68bbf92de9721b02a31a3833abfdc90144c7e39">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_64b8e2dccda0865dab24d72409f0d1e568c25371/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/9a9a99bc4918a7b04385ef0359af35c87219cdcf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_303af34a0e1bf758633b4c61790c55e383ef4ff6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/c4c035cb071fb9ca545404b2e938d56ef0008c95/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="a1d71d46e9b2d160e82565bb55f67e0bac1aee3e">
@@ -13,7 +346,7 @@
     <item
         is-multidex="true"
         jar="/home/maxchehab/.android/build-cache/109113d79c76fea70989d34ffdca77d735cb1988/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="a1dc8abf7fd09c2c993c4f55eb85f477f6ef76f0">
@@ -21,296 +354,17 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/9a9a99bc4918a7b04385ef0359af35c87219cdcf/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/202751a76da3a76a1cd918d045f14ac8c000ef0a/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_303af34a0e1bf758633b4c61790c55e383ef4ff6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/a2d3f72b6a8745ec166c51690d93a5134f267254/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f6646796f4becc56e945129557f7cf6915290a2c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/a764f860125aaf1e9d8c993ec5e100a14411211d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea4cf78c44b10e1787c4c1ba76bffb678ab0eb03/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/2b4dc0d1469c17df5ebc92ac1d2fc5e39c48491d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e20fc4b58c8f2c44cbd9f63da54d42dc17b381a6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/eac29dd56a47141158cadaa1d99d59472e480e91/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8723f4a84a0293f5e9ee76193e6bfec47137f048">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7069fb55cdfd325c9665b085e4bd2495b266fef1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/79092daf8ba116ead2903bd3a8a0fa68664b0db9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="98c1221c29c1a146edc6be342039cc242f9773c5">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0347678504c864c095799e87e1611f149ecd2cb3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/278b3663056a07cf38e5c15813db4819535a07ef/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5687d5d0a5cc1113f84a0477d8fdd3b91222d26e">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bf5ecfce80618e1f48ea96b5090c58fd50687d37/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/fd162be593a8f4988c0a69cec13feb6d046df883/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9bd36529dc9f895575e57306e6c1e8b48f8a6a8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/bb32f7b1680c39c23a98715c33e194ccdfeca48c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5bc0ff3c5908697eff46075dcdb14290942eec1f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_bd4c680882f1ac060f2fc4a9d69c7dd9ea180c0d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/5479ae1bb4c762c57efdd0445d2fa3561f6c7834/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="89e585298b910ee100d0f0f1e7f65520aab37931">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e7ac32216acd4a5f41c7551e4a00b920bc1f286d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/61cae8b4b9f4bbf4f33cbfc1fc91b0a10f2bc0b9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fc6c0dae1d2dbb08ba3da08479ef40b501af1485">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_53ff62fefe7e0c699dcf6d355f1e3957b8c3e6c1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/b48557a088210afc8b3802e95e093a95bb84a7b9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6c098516db3cf935b4a45dc4dfa95cf71d751961">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_68c7cea828cd41b42d448d4d0b3cfc93af2f5417/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/d9240024922346429be165edcacb1a2ef9fb9184/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49a4dd5bbcfd25d95f8b5ac49e0d972f30f23017/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/d7d302f327af857919411981084fe81b31514bd1/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="da7ddb1b984e766c503ade0bc7e19001f56691ca">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9705792e53391c8c3985a174037aae7a49590243/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/cd893acc30d326bf0f551e5185922e0a160cdec6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f351ee2e10aaf23a13b0fcd19788683d7dce6192">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_18372dfa1716798d4c2ad94d19203691152f1902/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/ad8ba40b1ce1b19846dca6e3265faf206f08438a/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9e5e6d0c253cc142bd6a586b3fa0bc9bc9024a7d">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1bbcfbdfc00ec1699c76d7d792136c706e96c23d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/80d41a3883b971f8862089244c352fc74ba5bbf9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e72c498ef3e345135b6bfdf7fc83c6b905228ade">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7040cbef908663e9b9f366b9f3012abff0b6e8cc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_d227504ce44d169345799349465783e4790052d3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/7808c442015f3eff12999b42e2da63f79d4f74ba/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95d5e968dc7f14577b462f43f31963191c00269c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/dd0dd4c4af8495957534c79f8f6807a2514a75a7/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5ffb700d6b39c05a38020d69d0903082f44bf00b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/5a21b7de784f1042364e5961664726a0990d5aa9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7729a71534bdcfe5470d540106760d59b15551ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/9741daa4b4c113f53b09cfdca8bda0043d324a46/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ef65e4780d67d06abddd6e2d15dd4e0519ad8d8a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a2cb450c458ca4c0dfcb286dcb31e78914bd063a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/d069a973dafea367ce1cac64ae4f94e5c67cfd18/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3c44b3406c87efebef1653714798038b8a2b8c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/ce5bad27ede1ac1d8e7b22365955e6400c7a3714/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2299e7e6e579fa158fc1135b9e62f5b56b6b0aa8">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_99a6863619a34b059deba7bd4329d4abfd2f8015/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/13e0ac979df2f22ad4c1335a1cf36d3cb885093b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aec5131adfead9b50dfa65a42f07af83144aa1cf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/e19d71d22e1e20a4ae0bc29991b47a747ae68d9d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0e39662b49ef66950c0941aa5fd4c49346a7c341">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ed1355ea3c1416e7076b7548bf32f58a4ed44f28/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/935dcb1da4b1696d787d550590f672346def3270/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2484ee9a66188155c9c792ff279d4a34c8e1d22e">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ab9dd5417e8da4ef89af1a1ba55ae4b6956ca728/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_4ec6b84d035a0d52a25614e8aa764bddd827685d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/50c0abe9f12b8f9de0f1aab2b4219cb37692160b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a8e32ee047b061b1aa0b3238dc2f227844402ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/5e56027703d7cb5da58631974d6018b261c869a0/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6dfa77c356a9a8c13ad61253ed95ed3a746527e6">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_15c23955f0e20b62384fed1dc1522dddccc708c6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/5ea15f474f32a8b219d4ba8e16d1313ee067c0b5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6bade648cc46af0ffc636586806c60dba1b7fdf8">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_62160964bc3e64cb58df21880df2591e19cd18af/classes.dex" />
+        sha1="09190a1dee39d994bd6c151b2c9793d01db72447">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e74d9fb2c8f81e1c160f808c46528531aa80cd89/classes.dex" />
     </item>
     <item
         is-multidex="true"
         jar="/home/maxchehab/.android/build-cache/3433f455380fae53f3fc71cfa070a27215494eae/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d74bfb5306aee8dbfa746b48842f87c01c64f6ac">
@@ -318,165 +372,138 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/e854a0a2a347dcb23ffe08d59993ba3dd9efd536/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/b33a634d65df1de586a940742b152a13243c9a08/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a00d7f8576a10b66449fbe4ac16f8de2fa4d683f">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_04d105409ed21a89c9032cdc943a23f18285c6b2/classes.dex" />
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e577ee649180d766ea2b331efffd545e7783ebc/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/7822f3da6e93a8f90262f1afa258bfa9325a3281/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/278b3663056a07cf38e5c15813db4819535a07ef/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="0ffbd024a5fd5efda6714beeaa97314b43563f1c">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b14103101a153dfafa40df3905410681ad71a4a0/classes.dex" />
+        sha1="5687d5d0a5cc1113f84a0477d8fdd3b91222d26e">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bf5ecfce80618e1f48ea96b5090c58fd50687d37/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/2d569de9b2b97b9d43f901cd9af8b9e5ae6964c1/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/a2d3f72b6a8745ec166c51690d93a5134f267254/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="5af721e99ea8e51ab4c68975048641f01aca77b2">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b7caa5e591ce95980667bb06f4702ac8ef200edd/classes.dex" />
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f6646796f4becc56e945129557f7cf6915290a2c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/6dfdc78b6be88d5d36cd99fd0ef5753cb3fb747f/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/b1ff1d8443b66142e4b4de4bfeb2ec80826eb27f/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="5f43d6c042ee8eb48fa7606da4d1034d472a43cd">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a18bb9b78639277d5d533f18c3a002772f6dc183/classes.dex" />
+        sha1="e700cbcd6de81819f051434ef97c65e1390bf2d9">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_24c0fb128da072cafc54a4400c6635e8188822bf/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/fd162be593a8f4988c0a69cec13feb6d046df883/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_b071e7b7ee7999e6b3dbc07f18f8e1e0b7531dc1/classes.dex" />
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9bd36529dc9f895575e57306e6c1e8b48f8a6a8/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/2bcbbbce182cecb2036d25568e2663a947f94537/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/ce5bad27ede1ac1d8e7b22365955e6400c7a3714/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="30854fe0b2a6e495a821d8f41f52c0a1d18d8d2a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2da3950f3e298368019e7dd741963be21bcb3071/classes.dex" />
+        sha1="2299e7e6e579fa158fc1135b9e62f5b56b6b0aa8">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_99a6863619a34b059deba7bd4329d4abfd2f8015/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/af10d47eea1610d74ed1dfeb51f1a10394cf643c/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="700b670ed3f9cf4b240081993c6004817866985a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9de01d72588f5c85d64e61a3a94e12779194732/classes.dex" />
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_d227504ce44d169345799349465783e4790052d3/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/5ac3a48defd7cc14415c8cea413f9a0e375de456/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/a764f860125aaf1e9d8c993ec5e100a14411211d/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="972004dcec5aeb1d9f4c06a6d90e9b5b674b9aa3">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_428f5b2919fcf12a26e46974e1738162dae01933/classes.dex" />
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea4cf78c44b10e1787c4c1ba76bffb678ab0eb03/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/845a02c26f7934cd12ce5349e4af259b2aadbaed/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/cd893acc30d326bf0f551e5185922e0a160cdec6/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="d410043f93e71bb0179ba86b85726dd080f14b79">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9484aaf810bc5faf4172264ae9d54d4d3b104ecf/classes.dex" />
+        sha1="f351ee2e10aaf23a13b0fcd19788683d7dce6192">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_18372dfa1716798d4c2ad94d19203691152f1902/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/49e6c97acd5858d51b7768fbf7fa2a3a5ec08101/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/5479ae1bb4c762c57efdd0445d2fa3561f6c7834/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="af26875652e085cd14713ff655bc3aa07960d459">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_83f37a4abc8352632fcc70c0a67e5aaf7eb6905a/classes.dex" />
+        sha1="89e585298b910ee100d0f0f1e7f65520aab37931">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e7ac32216acd4a5f41c7551e4a00b920bc1f286d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/87eb7985493abe0f5a7be1b34a5f2ca879307857/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/bb32f7b1680c39c23a98715c33e194ccdfeca48c/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="0ce1b9865e1e9baf2c9e03b4953ef2531db32d53">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea5842a609f5e3b56f6c7f924fecf9ded91a0231/classes.dex" />
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5bc0ff3c5908697eff46075dcdb14290942eec1f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/4c3655928784fc56535ea225345d93b743fe8ba9/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/eac29dd56a47141158cadaa1d99d59472e480e91/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="2018b324dbe57d9a1304a0b6a97ece59de258da6">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b69994866b78a81861e53ca362beed87ba2f68ba/classes.dex" />
+        sha1="8723f4a84a0293f5e9ee76193e6bfec47137f048">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7069fb55cdfd325c9665b085e4bd2495b266fef1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/94508f5006a9050b6460bfb674f1ff414fa9e6e6/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="6688016b1c2ab0daad89bb59ca9b7acbd1c80412">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fb4821b27e3ebe288a9e7444ad42fbac8abb902c/classes.dex" />
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_bd4c680882f1ac060f2fc4a9d69c7dd9ea180c0d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/e4cc22738ccc2582525c289386062a4ccbd72cb9/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/d9240024922346429be165edcacb1a2ef9fb9184/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a6daff13bf4ff813ad6686440c9c116e3bbd7630">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_00f8f949c3be2e7bac7f3be938e8a0da57d4147e/classes.dex" />
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49a4dd5bbcfd25d95f8b5ac49e0d972f30f23017/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/f4242635804b330e4511485673bc19f1ba598c66/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/2c43efc06f0b6df4ee8eb16e6006ff75d4e38977/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="2306e0665b3c407099437d9332e8528c2bfd5f99">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_421eae984b4d4fe5421ba76324a0afe6cd413d57/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/bc4ecbefe87af2ad05eb83c8bec9a99754bda38a/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="022615f683d7cdff31a236e7a31e1048b51196eb">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_054d59b4faddfec7312940ba219964da680c8c5e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/7c6001a1febd150a82a1ac23bce337c6305f5f3f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30704152908c78f80b1fa72d3815118d102a5f07">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c27dd19ed69171dd1fe386ee37f95df75aa7d475/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/a4a1192427db1895a99cc66eb03662ea52432b17/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4571d5800fdcdc7f28cd47c4abf83281aef38500/classes.dex" />
+        sha1="d61d03a79b7aa9cd89ab27e532e574ebc09f1bcb">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0799e34ce0311730e0e18f7452adbf89036fd2db/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -489,147 +516,129 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/ad151f3531bd534bc785aead28d4ab2cc4d1d416/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/50c0abe9f12b8f9de0f1aab2b4219cb37692160b/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a5f50e080b426327fe1851f6f7b5f836bff6ac9f">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e7dcb56425105720a496f4c746970ea0d8b9f53/classes.dex" />
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a8e32ee047b061b1aa0b3238dc2f227844402ef/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/87afb2a622211d8e3f84a7a6237c8c7d906c9f9a/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/d7d302f327af857919411981084fe81b31514bd1/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_373fd227b755e681e08a4f6c3287787858dee67e/classes.dex" />
+        sha1="da7ddb1b984e766c503ade0bc7e19001f56691ca">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9705792e53391c8c3985a174037aae7a49590243/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/d8a71e3097ed388f08b9c6ecfa4509acd0d5e0b7/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/79092daf8ba116ead2903bd3a8a0fa68664b0db9/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c7b0c1662f1e2949e3635c2461a889cf9bd19c52">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b401b4eb18a54c4649737b01d2d996fb32da7142/classes.dex" />
+        sha1="98c1221c29c1a146edc6be342039cc242f9773c5">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0347678504c864c095799e87e1611f149ecd2cb3/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/2c43efc06f0b6df4ee8eb16e6006ff75d4e38977/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/61cae8b4b9f4bbf4f33cbfc1fc91b0a10f2bc0b9/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="d61d03a79b7aa9cd89ab27e532e574ebc09f1bcb">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0799e34ce0311730e0e18f7452adbf89036fd2db/classes.dex" />
+        sha1="fc6c0dae1d2dbb08ba3da08479ef40b501af1485">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_53ff62fefe7e0c699dcf6d355f1e3957b8c3e6c1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/472144787bdf393493669cf3e02b8d900113e4b8/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/2b4dc0d1469c17df5ebc92ac1d2fc5e39c48491d/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="20051ea387377125db14d6c0966662019f0a897c">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9812d31b06746e7a3bcd54c6ec10bdac8387616f/classes.dex" />
+        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e20fc4b58c8f2c44cbd9f63da54d42dc17b381a6/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/0c6b69c612636bc4dfd150e46ea1bbfdd94261f2/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/4c3655928784fc56535ea225345d93b743fe8ba9/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="432ae8736f68442ef8d6e5c43631081aaa298a34">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0f13911052f0de2e3aed04c582f86e906b80b9ac/classes.dex" />
+        sha1="2018b324dbe57d9a1304a0b6a97ece59de258da6">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b69994866b78a81861e53ca362beed87ba2f68ba/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/2637e7cac05cb1999374bcdda42c3a7c44fde3bd/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/d069a973dafea367ce1cac64ae4f94e5c67cfd18/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="eaac8b02a2373e238cab6fc514e4667204b64191">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b553ef5e728e821f42d8a1003b75a02897ce4172/classes.dex" />
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3c44b3406c87efebef1653714798038b8a2b8c9/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/a4b9ef81c2766b7bcabb981dff7ee551d61b7713/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/5a21b7de784f1042364e5961664726a0990d5aa9/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="d68bbf92de9721b02a31a3833abfdc90144c7e39">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_64b8e2dccda0865dab24d72409f0d1e568c25371/classes.dex" />
+        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7729a71534bdcfe5470d540106760d59b15551ef/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/337ce05a9ab2e403cd758179faf44cb423c727ab/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/dd0dd4c4af8495957534c79f8f6807a2514a75a7/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="b985bd4eb1abd0e7e1f49c9cdf80a0d3563bad2a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b15b634204a74441ffcd1de863692fec01958b09/classes.dex" />
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5ffb700d6b39c05a38020d69d0903082f44bf00b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/2e5514525162bd40c3fcf341f42f395e17470050/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/ad8ba40b1ce1b19846dca6e3265faf206f08438a/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a67e5fbb2dacbe75c0a942e9dfec7a49803b941e">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e4047432fd745c11670f80c8a621509841528ae/classes.dex" />
+        sha1="9e5e6d0c253cc142bd6a586b3fa0bc9bc9024a7d">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1bbcfbdfc00ec1699c76d7d792136c706e96c23d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/b2e18d028a61014cdaa62e3a0973a15d6600f08e/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/b48557a088210afc8b3802e95e093a95bb84a7b9/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="472812641483188b3121f3294d7da47df3c14d33">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcfb61d6a29c740c4765b356a7c5f871d641bd21/classes.dex" />
+        sha1="6c098516db3cf935b4a45dc4dfa95cf71d751961">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_68c7cea828cd41b42d448d4d0b3cfc93af2f5417/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/84d22cebaedda75c061daae5c24e5ba530ca99c5/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/7808c442015f3eff12999b42e2da63f79d4f74ba/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="a611d7a00671ec4eb3050a21425fae955a38eb8a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d2178d4f8f6cf7c4149c5bf10f4596dbc6b1ee4/classes.dex" />
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95d5e968dc7f14577b462f43f31963191c00269c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/202751a76da3a76a1cd918d045f14ac8c000ef0a/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/935dcb1da4b1696d787d550590f672346def3270/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="09190a1dee39d994bd6c151b2c9793d01db72447">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e74d9fb2c8f81e1c160f808c46528531aa80cd89/classes.dex" />
+        sha1="2484ee9a66188155c9c792ff279d4a34c8e1d22e">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ab9dd5417e8da4ef89af1a1ba55ae4b6956ca728/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/b961ee427c775e2e6e6dd071ac107a9b34b45b0a/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/abd52a133d38dd0842e7275a1695c75df867f4b6/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="5d08eea1d3853927600d2507c7ca47a31c3df5d0">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_445ab10d95596df014ae8ffbcf9ff7cbcbf515e6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/17ae770d60b4d25d668b72b9b8442fa5aa509214/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aba37a3eec04e174dc59f00cf4bd7992061d847a">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_785cdcc614b1681ef1ce95c49614fa8200798e56/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/b33a634d65df1de586a940742b152a13243c9a08/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e577ee649180d766ea2b331efffd545e7783ebc/classes.dex" />
+        sha1="cf9754bfa8484f88f26e45d28fe298daa544d4f0">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad73c6100f024a46b83e258297cc2d5da0854186/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -637,35 +646,44 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7a30e006f1c1fa00b19209bd99d666d6dadd2468">
+        sha1="1da5206fc7ba1735bf0f0f75cec0af0d0dca8b95">
         <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8f8ff28535a76d989b98f7d126db414f7c7316fd/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/b1ff1d8443b66142e4b4de4bfeb2ec80826eb27f/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/5e56027703d7cb5da58631974d6018b261c869a0/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="e700cbcd6de81819f051434ef97c65e1390bf2d9">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_24c0fb128da072cafc54a4400c6635e8188822bf/classes.dex" />
+        sha1="6dfa77c356a9a8c13ad61253ed95ed3a746527e6">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_15c23955f0e20b62384fed1dc1522dddccc708c6/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/9048c3cae7e28bd3eed0812e0856844d780eb879/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/.android/build-cache/13e0ac979df2f22ad4c1335a1cf36d3cb885093b/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="f58a75f1d77aea54d4a3c6bad03fa09df438285e">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a7a5b332742643d091f079bb9e8206efe4aaf8a8/classes.dex" />
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aec5131adfead9b50dfa65a42f07af83144aa1cf/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/maxchehab/.android/build-cache/ddecdae320de59abda506ff48c5ca508020b67c5/output/jars/classes.jar"
-        jumboMode="true"
+        jar="/home/maxchehab/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_11d00c1298ff39208d731af0e897b3779d29d9ce/classes.dex" />
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_4ec6b84d035a0d52a25614e8aa764bddd827685d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/maxchehab/.android/build-cache/9741daa4b4c113f53b09cfdca8bda0043d324a46/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ef65e4780d67d06abddd6e2d15dd4e0519ad8d8a">
+        <dex dex="/media/maxchehab/Drive 1/Github/GroupFit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a2cb450c458ca4c0dfcb286dcb31e78914bd063a/classes.dex" />
     </item>
 
 </items>

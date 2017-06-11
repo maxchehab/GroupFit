@@ -1,10 +1,14 @@
 package com.maxchehab.groupfit;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.AsyncLayoutInflater;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,21 +18,42 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+import com.mikhaellopez.circularimageview.CircularImageView;
+import com.squareup.picasso.Picasso;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.Callable;
 
 public class FeedActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, StreamRequestListener {
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     public static Event CURRENT_EVENT;
 
     SwipeRefreshLayout swipeContainer;
+
+
+    NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,16 +70,20 @@ public class FeedActivity extends AppCompatActivity
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.feed_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        refreshStream();
+
+
+
+
+
 
         /*// Convert to a JSON object to print data
         */
@@ -68,7 +97,7 @@ public class FeedActivity extends AppCompatActivity
                 // Your code to refresh the list here.
                 // Make sure you call swipeContainer.setRefreshing(false)
                 // once the network request has completed successfully.
-                refreshStream();
+                refreshStream(getBaseContext());
             }
         });
         // Configure the refreshing colors
@@ -79,44 +108,137 @@ public class FeedActivity extends AppCompatActivity
         
     }
 
-
-
-    public void refreshStream(){
-        new WebRequestor().execute(new AsyncTaskParameter("http://67.204.152.242/groupfit/feed_stream.json",this));
-    }
-
     @Override
-    public void onStreamDownloadFinish(String json_stream){
-        ArrayList<View> stream = new ArrayList<View>();
+    protected void onResume(){
+       // Runtime.getRuntime().gc();
 
-        JsonParser jp = new JsonParser(); //from gson
-        JsonElement root = jp.parse(json_stream); //Convert the input stream to a json element
+        refreshStream(this);
+        updateUserData(this);
 
-        JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object.
-        JsonArray jsonStream = rootobj.get("stream").getAsJsonArray(); //just grab the zipcode
+        super.onResume();
 
-        for(int i = 0; i < jsonStream.size(); i++){
-            JsonObject activity = (JsonObject) jsonStream.get(i);
-            stream.add(new CardLayout(this, new Event(activity.get("title").getAsString(),activity.get("longitude").getAsDouble(),activity.get("latitude").getAsDouble(),activity.get("activity").getAsString(),activity.get("description").getAsString(),activity.get("date").getAsString(),activity.get("time").getAsString(),activity.get("host").getAsString(),activity.get("attendeesCount").getAsInt(),activity.get("remainingCount").getAsInt())));
-        }
-
-        LinearLayout feedLayout = (LinearLayout) findViewById(R.id.layout_feed);
-
-        feedLayout.removeAllViews();
-
-
-        for(int i = 0; i < stream.size(); i++){
-            feedLayout.addView(stream.get(i));
-        }
-
-        swipeContainer.setRefreshing(false);
     }
+
+
+
+    public void updateUserData(final Context context){
+        SharedPreferences userDetails = this.getSharedPreferences("user", MODE_PRIVATE);
+        String userID = userDetails.getString("userID", "");
+        final Person user = new Person(this, userID);
+        user.addCallbacks(new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                View headerLayout =  navigationView.getHeaderView(0);
+                Picasso.with(context).load(user.profileURL).into((CircularImageView) headerLayout.findViewById(R.id.profileImage));
+
+                ((TextView)headerLayout.findViewById(R.id.nav_username)).setText(user.username);
+                ((TextView)headerLayout.findViewById(R.id.nav_email)).setText(user.email);
+
+                return null;
+            }
+        });
+
+    }
+
+    public void refreshStream(final Context context){
+
+
+        final String url = "http://67.204.152.242/groupfit/api/feed.php";
+
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+
+                        Log.d("response", response);
+                        ArrayList<View> stream = new ArrayList<View>();
+
+                        JsonParser jp = new JsonParser(); //from gson
+                        JsonElement root = jp.parse(response); //Convert the input stream to a json element
+
+                        JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object.
+                        if(rootobj.get("success").getAsBoolean()){
+                            JsonArray jsonStream = rootobj.get("stream").getAsJsonArray(); //just grab the zipcode
+
+                            for(int i = 0; i < jsonStream.size(); i++){
+                                JsonObject activity = (JsonObject) jsonStream.get(i);
+                                Type collectionType = new TypeToken<String[]>(){}.getType();
+                                Gson gson = new Gson();
+                                String[] attendeesID = gson.fromJson(activity.get("attendeesID"),collectionType);
+                                stream.add(new CardLayout(context, new Event(context,
+                                        activity.get("title").getAsString(),
+                                        activity.get("description").getAsString(),
+                                        activity.get("activity").getAsString(),
+                                        activity.get("hostID").getAsString(),
+                                        activity.get("date").getAsString(),
+                                        activity.get("time").getAsString(),
+                                        activity.get("longitude").getAsDouble(),
+                                        activity.get("latitude").getAsDouble(),
+                                        activity.get("addressString").getAsString(),
+                                        activity.get("attendeesCount").getAsInt(),
+                                        activity.get("maxAttendees").getAsInt(),
+                                        attendeesID,
+                                        activity.get("eventID").getAsString(),
+                                        activity.get("createdDate").getAsDouble()
+
+                                        )));
+                            }
+
+                            LinearLayout feedLayout = (LinearLayout) findViewById(R.id.layout_feed);
+
+                            feedLayout.removeAllViews();
+
+
+                            for(int i = 0; i < stream.size(); i++){
+                                feedLayout.addView(stream.get(i));
+                            }
+                        }
+
+
+                        swipeContainer.setRefreshing(false);
+
+
+
+
+
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // error
+                        Log.d("Error.Response", error.toString());
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String>  params = new HashMap<String, String>();
+                SharedPreferences userDetails = context.getSharedPreferences("user", MODE_PRIVATE);
+                String userID = userDetails.getString("userID", "");
+                params.put("userID", userDetails.getString("userID",""));
+
+                return params;
+            }
+        };
+        queue.add(postRequest);
+        queue.getCache().clear();
+
+
+    }
+
 
 
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.feed_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -162,11 +284,16 @@ public class FeedActivity extends AppCompatActivity
         } else if (id == R.id.nav_settings) {
 
         } else if (id == R.id.nav_logout) {
-
+            this.getSharedPreferences("user", 0).edit().clear().commit();
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.feed_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

@@ -29,12 +29,18 @@ public class DatePickerFragment extends DialogFragment
     }
 
     public void onDateSet(DatePicker view, int year, int month, int day) {
+
         SimpleDateFormat sdf = new SimpleDateFormat("EEE, MMM dd");
         Calendar calendar = Calendar.getInstance();
         calendar.set(year,month,day);
 
         String weekDay = sdf.format(calendar.getTime());
-        ((CreateNewEventActivity)getActivity()).setDate(weekDay,year, month, day);
+
+        SimpleDateFormat format1 = new SimpleDateFormat("MM-dd-yyy");
+
+
+
+        ((CreateNewEventActivity)getActivity()).setDate(weekDay,format1.format(calendar.getTime()));
 
     }
 }
