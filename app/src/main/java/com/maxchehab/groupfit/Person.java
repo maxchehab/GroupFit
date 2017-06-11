@@ -1,6 +1,7 @@
 package com.maxchehab.groupfit;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.View;
@@ -30,7 +31,7 @@ import static android.content.Context.MODE_PRIVATE;
  * Created by maxchehab on 6/11/17.
  */
 
-public class Person {
+public class Person{
 
     public String email = "";
     public String username = "";
@@ -41,9 +42,8 @@ public class Person {
 
     private List<Callable<Integer>> callbacks = new ArrayList<>();;
 
-    public Person(final Context context, final String userID){
+    public Person(final String userID){
         final String url = "http://67.204.152.242/groupfit/api/user_info.php";
-        RequestQueue queue = Volley.newRequestQueue(context);
 
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
@@ -86,7 +86,7 @@ public class Person {
                 return params;
             }
         };
-        queue.add(postRequest);
+        VolleySingleton.getInstance(ApplicationController.CONTEXT).addToRequestQueue(postRequest);
     }
 
     private void executeCallbacks(){

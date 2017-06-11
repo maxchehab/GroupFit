@@ -1,39 +1,21 @@
 package com.maxchehab.groupfit;
 
-import android.app.Application;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.Volley;
+import android.content.Context;
 
-/**
- * Created by maxchehab on 6/11/17.
- */
+public final class ApplicationController {
 
-public class ApplicationController extends Application {
-    private static ApplicationController sInstance;
-    private RequestQueue mRequestQueue;
+    public static Context CONTEXT;
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        // initialize the singleton
-        sInstance = this;
+    private ApplicationController () { // private constructor
+        CONTEXT = null;
     }
-
-    public static synchronized ApplicationController getInstance() {
-        return sInstance;
+    public static void set(Context context) {
+        CONTEXT = context;
     }
 
 
 
-    public RequestQueue getRequestQueue() {
-        // lazy initialize the request queue, the queue instance will be
-        // created when it is accessed for the first time
-        if (mRequestQueue == null) {
-            mRequestQueue = Volley.newRequestQueue(getApplicationContext());
-        }
 
-        return mRequestQueue;
-    }
+
 }

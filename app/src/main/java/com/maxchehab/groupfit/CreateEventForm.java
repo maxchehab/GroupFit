@@ -79,7 +79,6 @@ public class CreateEventForm {
 
 
         String url = "http://67.204.152.242/groupfit/api/create_event.php";
-        RequestQueue queue = Volley.newRequestQueue(parentActivity);
 
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
@@ -128,7 +127,7 @@ public class CreateEventForm {
                 return params;
             }
         };
-        queue.add(postRequest);
+        VolleySingleton.getInstance(parentActivity).addToRequestQueue(postRequest);
 
 
 

@@ -56,6 +56,7 @@ public class FeedActivity extends AppCompatActivity
     NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ApplicationController.set(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feed);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -65,8 +66,8 @@ public class FeedActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), CreateNewEventActivity.class);
-                view.getContext().startActivity(intent);
+                Intent intent = new Intent(ApplicationController.CONTEXT, CreateNewEventActivity.class);
+                ApplicationController.CONTEXT.startActivity(intent);
             }
         });
 
@@ -97,7 +98,7 @@ public class FeedActivity extends AppCompatActivity
                 // Your code to refresh the list here.
                 // Make sure you call swipeContainer.setRefreshing(false)
                 // once the network request has completed successfully.
-                refreshStream(getBaseContext());
+                refreshStream();
             }
         });
         // Configure the refreshing colors
@@ -112,8 +113,8 @@ public class FeedActivity extends AppCompatActivity
     protected void onResume(){
        // Runtime.getRuntime().gc();
 
-        refreshStream(this);
-        updateUserData(this);
+        refreshStream();
+        updateUserData();
 
         super.onResume();
 
@@ -121,15 +122,15 @@ public class FeedActivity extends AppCompatActivity
 
 
 
-    public void updateUserData(final Context context){
+    public void updateUserData(){
         SharedPreferences userDetails = this.getSharedPreferences("user", MODE_PRIVATE);
         String userID = userDetails.getString("userID", "");
-        final Person user = new Person(this, userID);
+        final Person user = new Person(userID);
         user.addCallbacks(new Callable<Integer>() {
             @Override
             public Integer call() throws Exception {
                 View headerLayout =  navigationView.getHeaderView(0);
-                Picasso.with(context).load(user.profileURL).into((CircularImageView) headerLayout.findViewById(R.id.profileImage));
+                Picasso.with(ApplicationController.CONTEXT).load(user.profileURL).into((CircularImageView) headerLayout.findViewById(R.id.profileImage));
 
                 ((TextView)headerLayout.findViewById(R.id.nav_username)).setText(user.username);
                 ((TextView)headerLayout.findViewById(R.id.nav_email)).setText(user.email);
@@ -140,12 +141,11 @@ public class FeedActivity extends AppCompatActivity
 
     }
 
-    public void refreshStream(final Context context){
+    public void refreshStream(){
 
 
         final String url = "http://67.204.152.242/groupfit/api/feed.php";
 
-        RequestQueue queue = Volley.newRequestQueue(this);
 
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
@@ -169,7 +169,7 @@ public class FeedActivity extends AppCompatActivity
                                 Type collectionType = new TypeToken<String[]>(){}.getType();
                                 Gson gson = new Gson();
                                 String[] attendeesID = gson.fromJson(activity.get("attendeesID"),collectionType);
-                                stream.add(new CardLayout(context, new Event(context,
+                                stream.add(new CardLayout(ApplicationController.CONTEXT, new Event(
                                         activity.get("title").getAsString(),
                                         activity.get("description").getAsString(),
                                         activity.get("activity").getAsString(),
@@ -220,15 +220,15 @@ public class FeedActivity extends AppCompatActivity
             protected Map<String, String> getParams()
             {
                 Map<String, String>  params = new HashMap<String, String>();
-                SharedPreferences userDetails = context.getSharedPreferences("user", MODE_PRIVATE);
+                SharedPreferences userDetails = ApplicationController.CONTEXT.getSharedPreferences("user", MODE_PRIVATE);
                 String userID = userDetails.getString("userID", "");
                 params.put("userID", userDetails.getString("userID",""));
 
                 return params;
             }
         };
-        queue.add(postRequest);
-        queue.getCache().clear();
+        VolleySingleton.getInstance(this).addToRequestQueue(postRequest);
+
 
 
     }

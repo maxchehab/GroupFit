@@ -37,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ApplicationController.set(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
@@ -73,7 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
                     email.setEnabled(false);
                     submitButton.setEnabled(false);
                     loginLink.setEnabled(false);
-                    submit(v.getContext());
+                    submit();
                 }else{
                     if(!passwordValid){
                         password.setError("Valid password is required");
@@ -92,9 +93,8 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    private void submit(final Context context){
+    private void submit(){
         final String url = "http://67.204.152.242/groupfit/api/register.php";
-        RequestQueue queue = Volley.newRequestQueue(this);
 
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
@@ -128,13 +128,13 @@ public class RegisterActivity extends AppCompatActivity {
                                 email.setError("This email is already taken");
                             }
                         }else{
-                            SharedPreferences userDetails = context.getSharedPreferences("user", MODE_PRIVATE);
+                            SharedPreferences userDetails = ApplicationController.CONTEXT.getSharedPreferences("user", MODE_PRIVATE);
                             SharedPreferences.Editor edit = userDetails.edit();
                             edit.clear();
                             edit.putString("userID", rootobj.get("userID").toString().replace("\"",""));
                             edit.commit();
 
-                            Intent intent = new Intent(context, FeedActivity.class);
+                            Intent intent = new Intent(ApplicationController.CONTEXT, FeedActivity.class);
                             startActivity(intent);
                             finish();
                         }
@@ -160,7 +160,7 @@ public class RegisterActivity extends AppCompatActivity {
                 return params;
             }
         };
-        queue.add(postRequest);
+        VolleySingleton.getInstance(this).addToRequestQueue(postRequest);
     }
 
     public boolean isValidEmailAddress(String email) {

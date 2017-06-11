@@ -1,5 +1,6 @@
 package com.maxchehab.groupfit;
 
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -69,6 +70,7 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ApplicationController.set(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expanded_event);
 
@@ -96,7 +98,7 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submit(v.getContext());
+                submit();
             }
         });
 
@@ -168,12 +170,9 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
 
     }
 
-    private void submit(final Context context){
+    private void submit(){
         submitButton.setEnabled(false);
         final String url = "http://67.204.152.242/groupfit/api/rsvp.php";
-        RequestQueue queue = Volley.newRequestQueue(this);
-
-
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>()
                 {
@@ -201,7 +200,7 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
             protected Map<String, String> getParams()
             {
                 Map<String, String>  params = new HashMap<String, String>();
-                SharedPreferences userDetails = context.getSharedPreferences("user", MODE_PRIVATE);
+                SharedPreferences userDetails = ExpandedEventActivity.this.getSharedPreferences("user", MODE_PRIVATE);
                 String userID = userDetails.getString("userID", "");
                 params.put("userID",userID);
                 params.put("eventID", FeedActivity.CURRENT_EVENT.eventID);
@@ -209,7 +208,7 @@ public class ExpandedEventActivity extends AppCompatActivity implements OnMapRea
                 return params;
             }
         };
-        queue.add(postRequest);
+        VolleySingleton.getInstance(this).addToRequestQueue(postRequest);
     }
 
     public void hideToolbar(){

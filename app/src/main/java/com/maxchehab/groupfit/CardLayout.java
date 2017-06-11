@@ -55,7 +55,7 @@ public class CardLayout extends CardView{
 
         title.setText(event.title);
         Log.d("cardview.image","https://maps.googleapis.com/maps/api/staticmap?center=" + event.latitude + "," + event.longitude + "&zoom=18&size=400x400&scale=2&maptype=terrain&markers=%7C" + event.latitude + "," + event.longitude + "&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI");
-        Picasso.with(getContext()).load("https://maps.googleapis.com/maps/api/staticmap?center=" + event.latitude + "," + event.longitude + "&zoom=18&size=400x400&scale=2&maptype=terrain&markers=%7C" + event.latitude + "," + event.longitude + "&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI").into(thumbnail);
+        Picasso.with(getContext()).load("https://maps.googleapis.com/maps/api/staticmap?center=" + event.latitude + "," + event.longitude + "&zoom=18&size=400x400&scale=2&maptype=terrain&markers=%7C" + event.latitude + "," + event.latitude + "&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI").into(thumbnail);
         date.setText(event.date);
         time.setText(event.time);
         attendees.setText(event.attendeesCount + " people are going • " + (event.maxAttendees - event.attendeesCount) +  " spots left.");

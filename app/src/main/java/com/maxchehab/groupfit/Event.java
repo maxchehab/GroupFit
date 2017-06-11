@@ -1,6 +1,7 @@
 package com.maxchehab.groupfit;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.util.Log;
 
 import java.text.SimpleDateFormat;
@@ -13,7 +14,7 @@ import java.util.Locale;
  * Created by Max on 5/10/2017.
  */
 
-public class Event {
+public class Event{
 
     public String title;
     public String description;
@@ -30,11 +31,11 @@ public class Event {
     public double createdDate;
     public Person host;
 
-    public Event(Context context, String title, String description, String activity, String hostID, String date, String time, double longitude, double latitude, String addressString, int attendeesCount, int maxAttendees, String[] attendeesID, String eventID, double createdDate){
+    public Event(String title, String description, String activity, String hostID, String date, String time, double longitude, double latitude, String addressString, int attendeesCount, int maxAttendees, String[] attendeesID, String eventID, double createdDate){
         this.title = title;
         this.description = description;
         this.activity = activity;
-        this.host = new Person(context,hostID);
+        this.host = new Person(hostID);
         try{
             Calendar today = Calendar.getInstance();
             Calendar tommorow = Calendar.getInstance();
@@ -83,7 +84,7 @@ public class Event {
         this.attendeesCount = attendeesCount;
         this.maxAttendees = maxAttendees;
         for (String id : attendeesID) {
-            this.attendees.add(new Person(context, id));
+            this.attendees.add(new Person(id));
         }
         this.eventID = eventID;
         this.createdDate = createdDate;

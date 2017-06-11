@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        ApplicationController.set(this);
         SharedPreferences userDetails = this.getSharedPreferences("user", MODE_PRIVATE);
         String userID = userDetails.getString("userID", "");
 
@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                     password.setEnabled(false);
                     email.setEnabled(false);
                     submitButton.setEnabled(false);
-                    submit(v.getContext());
+                    submit();
                 }else{
                     if(!passwordValid){
                         password.setError("Valid password is required");
@@ -93,9 +93,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    private void submit(final Context context){
+    private void submit(){
         final String url = "http://67.204.152.242/groupfit/api/login.php";
-        RequestQueue queue = Volley.newRequestQueue(this);
 
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
@@ -114,13 +113,13 @@ public class LoginActivity extends AppCompatActivity {
                             email.setEnabled(true);
                             submitButton.setEnabled(true);
                         }else{
-                            SharedPreferences userDetails = context.getSharedPreferences("user", MODE_PRIVATE);
+                            SharedPreferences userDetails = ApplicationController.CONTEXT.getSharedPreferences("user", MODE_PRIVATE);
                             SharedPreferences.Editor edit = userDetails.edit();
                             edit.clear();
                             edit.putString("userID", rootobj.get("userID").toString().replace("\"",""));
                             edit.commit();
 
-                            Intent intent = new Intent(context, FeedActivity.class);
+                            Intent intent = new Intent(ApplicationController.CONTEXT, FeedActivity.class);
                             startActivity(intent);
                             finish();
                         }
@@ -145,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
                 return params;
             }
         };
-        queue.add(postRequest);
+        VolleySingleton.getInstance(this).addToRequestQueue(postRequest);
     }
 
     public boolean isValidEmailAddress(String email) {

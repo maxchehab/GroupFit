@@ -70,6 +70,7 @@ public class CreateNewEventActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ApplicationController.set(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new_event);
 
