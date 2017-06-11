@@ -201,10 +201,6 @@ public class FeedActivity extends AppCompatActivity
 
                         swipeContainer.setRefreshing(false);
 
-
-
-
-
                     }
                 },
                 new Response.ErrorListener()

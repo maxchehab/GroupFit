@@ -86,23 +86,7 @@ public class CreateNewEventActivity extends AppCompatActivity{
         submitForm = (Button) findViewById(R.id.new_event_submit);
         progressBar = (ProgressBar) findViewById(R.id.create_new_event_progress);
 
-
-        LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-        ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
-        ActivityCompat.requestPermissions(this,new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-
-        if ( Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) == PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-
-            Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            double longitude = location.getLongitude();
-            double latitude = location.getLatitude();
-
-
-            Picasso.with(this).load("https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=18&size=800x400&scale=2&maptype=terrain&markers=%7C" + latitude + "," + longitude + "&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI").into(locationImage);
-
-        }else{
-            Picasso.with(this).load("https://maps.googleapis.com/maps/api/staticmap?center=44.0582, 121.3153&zoom=18&size=800x400&scale=2&maptype=terrain&markers=%7C44.0582, 121.3153&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI").into(locationImage);
-        }
+        Picasso.with(this).load("https://maps.googleapis.com/maps/api/staticmap?center=44.0582, 121.3153&zoom=18&size=800x400&scale=2&maptype=terrain&markers=%7C44.0582, 121.3153&key=AIzaSyCCadh2fDBt5EI-wgAsBeMIIDQUTWcdSGI").into(locationImage);
 
 
 
@@ -264,6 +248,9 @@ public class CreateNewEventActivity extends AppCompatActivity{
             }
         });
     }
+
+
+
 
     private void displayPlacePicker(View v){
         try{

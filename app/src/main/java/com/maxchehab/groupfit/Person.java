@@ -36,6 +36,7 @@ public class Person{
     public String email = "";
     public String username = "";
     public String profileURL = "";
+    public String userID = "";
 
     public boolean loaded = false;
 
@@ -44,7 +45,7 @@ public class Person{
 
     public Person(final String userID){
         final String url = "http://67.204.152.242/groupfit/api/user_info.php";
-
+        this.userID = userID;
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>()
