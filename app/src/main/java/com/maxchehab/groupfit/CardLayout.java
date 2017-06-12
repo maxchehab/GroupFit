@@ -7,14 +7,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Locale;
 
 /**
  * Created by Max on 5/10/2017.
@@ -60,12 +55,14 @@ public class CardLayout extends CardView{
         time.setText(event.time);
         attendees.setText(event.attendeesCount + " people are going • " + (event.maxAttendees - event.attendeesCount) +  " spots left.");
 
-        if (event.activity.equals("cycling")) {
+        if (event.activity.equals("Cycling")) {
             activityIcon.setImageResource(R.drawable.ic_cycling);
-        } else if (event.activity.equals("running")) {
+        } else if (event.activity.equals("Running")) {
             activityIcon.setImageResource(R.drawable.ic_running);
-        } else if (event.activity.equals("crossfit")) {
+        } else if (event.activity.equals("Crossfit")) {
             activityIcon.setImageResource(R.drawable.ic_crossfit);
+        } else if (event.activity.equals("Hiking")){
+            activityIcon.setImageResource(R.drawable.ic_hiking);
         }
 
 
